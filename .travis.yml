@@ -1,0 +1,8 @@
+language: csharp
+dist: trusty
+sudo: false
+solution: HOTSLogs.Net.sln
+mono: none
+dotnet: 1.0.1
+script:
+  - ./CIbuild.sh --quiet verify

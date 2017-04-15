@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Bond_009</Authors>
+    <PackageId>HOTSLogs.Net</PackageId>
+    <Version>0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Configuration">
+    <AssemblyName>HOTSLogs.Net</AssemblyName>
+    <DocumentationFile>bin\Release\HOTSLogs.Net.xml</DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+  </ItemGroup>
+
+</Project>
