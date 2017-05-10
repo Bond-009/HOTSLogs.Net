@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace HOTSLogs
 {
-    public class Map
+    public struct Map
     {
         public string PrimaryName { get; set; }
         public string ImageURL { get; set; }

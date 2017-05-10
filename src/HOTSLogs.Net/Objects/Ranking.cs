@@ -1,6 +1,6 @@
 namespace HOTSLogs
 {
-    public class Ranking
+    public struct Ranking
     {
         public string GameMode { get; set; }
         public int? LeagueID { get; set; }

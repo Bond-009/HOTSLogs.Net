@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace HOTSLogs
 {
-    public class Hero
+    public struct Hero
     {
         public string PrimaryName { get; set; }
         public string ImageURL { get; set; }

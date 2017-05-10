@@ -17,10 +17,10 @@ namespace HOTSLogs
         /// Returns a list of all heroes.
         /// </summary>
         /// <returns>Returns a list of all heroes.</returns>
-        public async Task<List<Hero>> GetHeroes()
+        public async Task<Hero[]> GetHeroes()
         {
             return await await Task.Factory.StartNew(async () =>
-                JsonConvert.DeserializeObject<List<Hero>>(
+                JsonConvert.DeserializeObject<Hero[]>(
                     await GetStringAsync(Endpoints.Heroes)));
         }
 
@@ -28,10 +28,10 @@ namespace HOTSLogs
         /// Returns a list of all maps.
         /// </summary>
         /// <returns>Returns a list of all maps.</returns>
-        public async Task<List<Map>> GetMaps()
+        public async Task<Map[]> GetMaps()
         {
             return await await Task.Factory.StartNew(async () =>
-                JsonConvert.DeserializeObject<List<Map>>(
+                JsonConvert.DeserializeObject<Map[]>(
                     await GetStringAsync(Endpoints.Maps)));
         }
 
@@ -39,10 +39,10 @@ namespace HOTSLogs
         /// Returns a list of all events.
         /// </summary>
         /// <returns>Returns a list of all events.</returns>
-        public async Task<List<Event>> GetEvents()
+        public async Task<Event[]> GetEvents()
         {
             return await await Task.Factory.StartNew(async () =>
-                JsonConvert.DeserializeObject<List<Event>>(
+                JsonConvert.DeserializeObject<Event[]>(
                     await GetStringAsync(Endpoints.Events)));
         }
 

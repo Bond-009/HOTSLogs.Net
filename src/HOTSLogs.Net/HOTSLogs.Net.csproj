@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Authors>Bond_009</Authors>
     <PackageId>HOTSLogs.Net</PackageId>
-    <Version>0.1</Version>
+    <Version>0.1.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Label="Configuration">
@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
   </ItemGroup>
 
 </Project>
