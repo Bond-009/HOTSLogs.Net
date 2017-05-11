@@ -1,11 +1,15 @@
+using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace HOTSLogs
 {
-    public struct Player
+    public class Player
     {
+        [JsonRequired]
         public int PlayerID { get; set; }
+        [JsonRequired]
         public string Name { get; set; }
-        public Ranking[] LeaderboardRankings { get; set; }
+        [JsonRequired]
+        public IEnumerable<Ranking> LeaderboardRankings { get; set; }
     }
 }
